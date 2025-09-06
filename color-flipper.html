@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function changeMode(bcolor, color){
+        let x = document.getElementById('body');
+        x.style.background = bcolor;
+        x.style.color = color;
+    }
+    function randomColor(){
+        let r = Math.floor(Math.random() * 255);
+        let g = Math.floor(Math.random() * 200);
+        let b = Math.floor(Math.random() * 20);
+        document.getElementById('body').style.background = `rgb(${r}, ${g}, ${b})`;
+    }
+</script>
+<body id="body">
+    <div class="body">
+        <ul>
+            <li><button type='button' onclick="changeMode('green','red')">Green</button></li>
+            <li><button type='button' onclick="changeMode('red','black')">Red</button></li>
+            <li><button type='button' onclick="changeMode('blue','white')">Blue</button></li>
+            <li><button type='button' onclick="randomColor()">Random</button></li>
+        </ul>
+
+    </div>
+</body>
+</html>

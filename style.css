@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background:rgb(238, 238, 247);
+}
+.body{
+    margin: left 40%;
+    margin-top:20px;
+    color:white;
+}
+.body>ul>li{
+    list-style: none;
+    padding:10px;
+    float:left;
+}
+.body>ul>li>button{
+    padding:10px;
+    background:purple;
+}
+.body>ul>li>button:hover{
+    background:blue;
+    color:white;
+}
+.body>ul>li{
+    display:float;
+    float:left;
+    list-style: none;
+    padding:10px;
+}
+
+
